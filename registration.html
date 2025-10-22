@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-title">Student Registration</div>
+
+  <div class="form-container">
+    <h1>Register Now</h1>
+
+    <form id="registrationForm">
+      <div class="input-group">
+        <label for="student-id">Student ID</label>
+        <input type="text" id="student-id" placeholder="Enter your Student ID" required />
+      </div>
+
+      <div class="input-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required />
+      </div>
+
+      <div class="input-group">
+        <label for="contact">Contact Number</label>
+        <input type="text" id="contact" placeholder="09xxxxxxxxx" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@gmail.com" required />
+      </div>
+
+      <div class="input-group">
+        <label for="address">Address</label>
+        <textarea id="address" placeholder="Enter your address" required></textarea>
+      </div>
+
+      <div class="input-group">
+        <label for="course">Course</label>
+        <select id="course" required>
+          <option value="">Select your course</option>
+          <option>COT</option>
+          <option>HTM</option>
+          <option>HM</option>
+          <option>BEED</option>
+          <option>BSED</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="guardian">Guardian's Name</label>
+        <input type="text" id="guardian" placeholder="Enter guardian's name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="guardian-contact">Guardian Contact</label>
+        <input type="text" id="guardian-contact" placeholder="09xxxxxxxxx" required />
+      </div>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+  <div id="successOverlay" class="hidden">
+    <div class="overlay-content">
+      <h2> You have registered successfully!</h2>
+      <p>Thank you for submitting your information.</p>
+      <button id="closeOverlay">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
